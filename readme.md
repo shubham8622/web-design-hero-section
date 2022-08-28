@@ -4,7 +4,7 @@
 
 ## Check the live link.
 
-[Hero section](https://product-hero-section.vercel.app/)
+[Hero section](https://web-design-hero-section.vercel.app/)
 
 ![badge](https://img.shields.io/badge/Vercel-Vercel-green)
  
