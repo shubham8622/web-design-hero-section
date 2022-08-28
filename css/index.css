@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+.bars{
+    display: none;
+}
+body{
+    overflow: hidden;
+}
+.main-div{
+    max-width: 1200px;
+    height: 100vh;
+    margin:0 auto;
+    /* background: linear-gradient(58deg, #cbadf8, #fcc3ee); */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    color: #484f8d;
+    padding-inline: 10px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h5.nav-item {
+    padding: 20px;
+}
+
+button.signin-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background:linear-gradient(to right, #965cf2,#ff8adc);    
+}
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-inline: 10px;
+}
+.left-section {
+    align-self: center;
+    flex: 1;
+}
+
+.imgs-div img:nth-child(3) {
+    width: 100%;
+    height: 100%;
+}
+
+.imgs-div {
+    position: relative;
+    flex: 1;
+}
+
+img.vector-img {
+    position: absolute;
+    top: 55%;
+    left: 12%;
+}
+
+img.vector-dot {
+    position: absolute;
+    top: 57%;
+    left: 19%;
+}
+
+.left-section h1 {
+    color: #3f4894;
+    font-size: 75px;
+}
+
+.left-section h4 {
+    font-size: 13px;
+    width: 50%;;
+    line-height: 20px;
+    padding: 60px 0;
+    color: #757996;
+}
+
+button.learn-more-btn {
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background: linear-gradient(to right, #965cf2,#ff8adc);
+    font-size: 25px;
+}
+
+.cs-background {
+    background: linear-gradient(58deg, #cbadf8, #fcc3ee);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    border-radius: 0 0 0 100px;
+    z-index: -1;
+    transform: rotate(346deg);
+    left: 50%;
+    top: -27%;
+}
+@media only screen and (max-width:1024px){
+    .cs-background{
+        display: none;
+    }
+    .intro-section{
+        margin-top: 2rem;
+    }
+    .left-section h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width:768px){
+    .bars{
+        display: block;
+    }
+    .nav-items,
+    .signin-btn{
+        display: none;
+    }
+    nav img{
+        max-width: 5rem;
+    }
+    .intro-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-section h1{
+        text-align: center;
+        font-size: 50px;
+        margin: 20px;
+    }
+    .left-section h4{
+        margin-inline: auto;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+    }
+    .left-section{
+        text-align: center;
+    }
+    button.learn-more-btn{
+        margin: 2rem 0;
+        /* display: inline-block; */
+    }
+    .imgs-div img:nth-child(3){
+        max-width: 30rem;
+    }
+}
